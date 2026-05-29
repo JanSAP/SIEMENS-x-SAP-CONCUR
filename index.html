@@ -185,7 +185,6 @@ body{font-family:'72',system-ui,-apple-system,sans-serif;color:var(--text);backg
 .agentic-videos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
 .agentic-video-item{border-radius:16px;overflow:hidden;aspect-ratio:16/9;background:#0a0e1a;box-shadow:0 8px 24px rgba(0,42,134,0.08);position:relative;cursor:pointer}
 .agentic-video-item iframe{width:100%;height:100%;border:none;display:block}
-.agentic-video-item a{display:block;width:100%;height:100%;position:relative}
 .agentic-video-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s}
 .agentic-video-item:hover img{transform:scale(1.03)}
 .video-play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;background:rgba(0,0,0,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.3s}
@@ -402,7 +401,7 @@ body{font-family:'72',system-ui,-apple-system,sans-serif;color:var(--text);backg
         <div class="ui-side-content">
           <div class="ui-side-title">Efficiency</div>
           <div class="ui-score">30%</div>
-          <div class="ui-score-label">Expense Report Time</div>
+          <div class="ui-score-label">Reduction in Time for<br>Expense Report Building</div>
           <div class="ui-score-bar">
             <span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span>
           </div>
@@ -623,23 +622,17 @@ body{font-family:'72',system-ui,-apple-system,sans-serif;color:var(--text);backg
       </div>
     </div>
     <div class="agentic-videos reveal">
-      <div class="agentic-video-item">
-        <a href="https://www.youtube.com/watch?v=36Zm0PT85H8" target="_blank" rel="noopener">
-          <img src="https://img.youtube.com/vi/36Zm0PT85H8/maxresdefault.jpg" alt="SAP Concur Agentic AI">
-          <div class="video-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-        </a>
+      <div class="agentic-video-item" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/36Zm0PT85H8?autoplay=1\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen></iframe>'">
+        <img src="https://img.youtube.com/vi/36Zm0PT85H8/maxresdefault.jpg" alt="SAP Concur Agentic AI">
+        <div class="video-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
       </div>
-      <div class="agentic-video-item">
-        <a href="https://www.youtube.com/watch?v=YtCA_Xjysb4" target="_blank" rel="noopener">
-          <img src="https://img.youtube.com/vi/YtCA_Xjysb4/maxresdefault.jpg" alt="SAP Concur Intelligence">
-          <div class="video-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-        </a>
+      <div class="agentic-video-item" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/YtCA_Xjysb4?autoplay=1\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen></iframe>'">
+        <img src="https://img.youtube.com/vi/YtCA_Xjysb4/maxresdefault.jpg" alt="SAP Concur Intelligence">
+        <div class="video-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
       </div>
-      <div class="agentic-video-item">
-        <a href="https://www.youtube.com/watch?v=uUQNm3McQZ8" target="_blank" rel="noopener">
-          <img src="https://img.youtube.com/vi/uUQNm3McQZ8/maxresdefault.jpg" alt="SAP Concur Platform">
-          <div class="video-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-        </a>
+      <div class="agentic-video-item" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/uUQNm3McQZ8?autoplay=1\' allow=\'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture\' allowfullscreen></iframe>'">
+        <img src="https://img.youtube.com/vi/uUQNm3McQZ8/maxresdefault.jpg" alt="SAP Concur Platform">
+        <div class="video-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
       </div>
     </div>
     <div class="agentic-tagline reveal">Book &middot; Approve &middot; Expense &middot; <strong>Autonomously</strong></div>
